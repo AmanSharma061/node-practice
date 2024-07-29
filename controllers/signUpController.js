@@ -1,6 +1,4 @@
 import User from "../database/models/userModel.js";
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
 import { apiError } from "../utils/apiError.js";
 import { apiResponse } from "../utils/apiResponse.js";
 export const signUpController = async (req, res, next) => {
