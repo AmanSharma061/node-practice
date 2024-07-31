@@ -1,8 +1,8 @@
-import User from "../database/models/userModel.js";
+import User from "@/database/models/userModel";
+import { apiError } from "@/utils/apiError";
+import { apiResponse } from "@/utils/apiResponse";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { apiResponse } from "../utils/apiResponse.js";
-import { apiError } from "../utils/apiError.js";
 export const loginController = async (req, res) => {
   const { email, password } = req.body;
   if (!email) {
