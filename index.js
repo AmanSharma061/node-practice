@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(router);
 app.use(bodyParser.urlencoded({ extended: false })); // encodes the URL-encoded data
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000 ;
 
 connectDb();
 app.listen(PORT, () => {
