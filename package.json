@@ -7,11 +7,6 @@
 		"dev": "nodemon  index.js",
 		"start": "nodemon -L index.js"
 	},
-	"_moduleAliases": {
-		"@/": "./src",
-		"@routes": "src/routes",
-		"@controllers": "src/controllers"
-	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
