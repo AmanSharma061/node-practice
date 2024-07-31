@@ -33,9 +33,4 @@ jobs:
             amansharmara112/node-practic:latest
             amansharmara112/node-practic:${{ github.sha }}
 
-      - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v1
-        with:
-          subject-name: amansharmara112/node-practic 
-          subject-digest: ${{ steps.build.outputs.digest }}
-          push-to-registry: true
+    
