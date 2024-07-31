@@ -1,6 +1,6 @@
 import User from "../database/models/userModel.js";
-import { apiError } from "../utils/apiError.js";
-import { apiResponse } from "../utils/apiResponse.js";
+import {apiError} from '../utils/apiError.js'
+import {apiResponse} from '../utils/apiResponse.js'
 export const signUpController = async (req, res, next) => {
   const { email, password } = req.body;
   if (!email) {

@@ -1,5 +1,6 @@
-import User from "../database/models/userModel.js";
+
 import jwt from "jsonwebtoken";
+import User from "../database/models/userModel.js";
 const refreshTokenController = async (req, res) => {
   const { email, refreshToken } = req.body;
 

@@ -1,9 +1,15 @@
 import jwt, {decode} from 'jsonwebtoken'
 
 export const authMiddleWare = async (req, res, next) => {
-	let token = req.headers.authorization.split(" ")[1];
+	let token = req?.headers?.authorization?.split(" ")[1];
 
-
+if(!token)
+{
+	return res.status(401).json({
+		error: true,
+		message:"Missing Token."
+	})
+}
 	try {
 		jwt.verify(token, process.env.SECRET, (err, decoded) => {
 
